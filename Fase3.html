@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercici 2 Javascript - Fase3</title>
+  </head>
+  <body>
+    
+    <input type="button" onclick="Lletres_Repetides()" value="Calcular"/>
+
+    <script>
+      function Lletres_Repetides(){
+      let nom = "lluis sitjes"
+      let caracters;
+      let posicion;
+      let contador_l = 0;
+      let contador_u = 0;
+      let contador_i = 0;
+      let contador_s = 0;
+      let contador_t = 0;
+      let contador_j = 0;
+      let contador_e = 0;
+      for (i=0; i< nom.length; i++){
+        caracters = nom.slice(i-1, i)
+        if (nom.charAt(i) == "l"){
+          contador_l++;
+        }
+        if (nom.charAt(i) == "u"){
+          contador_u++;
+        }
+        if (nom.charAt(i) == "i"){
+          contador_i++;
+        }
+        if (nom.charAt(i) == "s"){
+          contador_s++;
+        }
+        if (nom.charAt(i) == "t"){
+          contador_t++;
+        }
+        if (nom.charAt(i) == "j"){
+          contador_j++;
+        }
+        if (nom.charAt(i) == "e"){
+          contador_e++;
+        }
+        }
+        console.log("La letra L se repite " + contador_l + " veces")
+        console.log("La letra U se repite " + contador_u + " veces")
+        console.log("La letra I se repite " + contador_i + " veces")
+        console.log("La letra S se repite " + contador_s + " veces")
+        console.log("La letra T se repite " + contador_t + " veces")
+        console.log("La letra J se repite " + contador_j + " veces")
+        console.log("La letra E se repite " + contador_e + " veces")
+        }
+    
+        </script>
+  </body>
+</html>
